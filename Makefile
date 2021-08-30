@@ -4,5 +4,6 @@ build:
 	mkdir -p upload
 	cp -r ./admin/ upload/admin/
 	cp -r ./catalog/ upload/catalog/
+	cp -r ./system/ upload/system/
 	zip -r "$(ARCHIVENAME)" ./upload/ install.xml
 	rm -rf ./upload/

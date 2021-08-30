@@ -9,12 +9,8 @@
 
     <file path="admin/controller/marketplace/install.php">
         <operation>
-            <search>
-                <![CDATA[if ($safe) {]]>
-            </search>
-            <add position="replace">
-                <![CDATA[if (true) {]]>
-            </add>
+            <search><![CDATA[if ($safe) {]]></search>
+            <add position="replace"><![CDATA[if (true) {]]></add>
         </operation>
     </file>
 </modification>
