@@ -39,7 +39,9 @@ class FrisbeeService
      */
     public function setMerchantId($merchantId)
     {
-        if (empty($merchantId)) {
+        $merchantId = trim($merchantId);
+
+        if (empty($merchantId) || $merchantId === self::DEV_MERCHANT) {
             $this->merchantId = self::DEV_MERCHANT;
         } else {
             $this->merchantId = $merchantId;
@@ -147,7 +149,7 @@ class FrisbeeService
      */
     public function getRequestUrl()
     {
-        if ($this->merchantId == self::DEV_MERCHANT) {
+        if ($this->merchantId === self::DEV_MERCHANT) {
             return self::DEV_URL;
         }
 
