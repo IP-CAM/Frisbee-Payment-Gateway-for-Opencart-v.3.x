@@ -6,7 +6,7 @@
             <div class="pull-right">
                 <button type="submit" form="form" data-toggle="tooltip" title="<?php echo $button_save; ?>" class="btn btn-primary"><i class="fa fa-save"></i></button>
                 <a href="<?php echo $cancel; ?>" data-toggle="tooltip" title="<?php echo $button_cancel; ?>" class="btn btn-default"><i class="fa fa-reply"></i></a></div>
-            <h1><img src="view/image/payment/frisbee.png" style="height:25px; margin-top:-5px;" />   <?php echo $heading_title; ?></h1>
+            <h1><img src="view/image/payment/frisbee.svg" style="height:25px; margin-top:-5px;" />   <?php echo $heading_title; ?></h1>
             <ul class="breadcrumb">
                 <?php foreach ($breadcrumbs as $breadcrumb) { ?>
                 <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
