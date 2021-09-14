@@ -24,6 +24,7 @@ $_['entry_status'] = 'Стан:';
 $_['entry_sort_order'] = 'Замовлення:';
 $_['entry_styles'] = 'Стилі Fondy';
 $_['entry_frisbee_result'] = 'URL -адреса результату';
+$_['entry_title'] = 'Назва способу оплати:';
 
 $_['error_permission'] = "У вас немає дозволу!";
 $_['error_merchant'] = 'Ідентифікатор продавця неправильний!';

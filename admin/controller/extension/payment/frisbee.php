@@ -74,6 +74,7 @@ class ControllerExtensionPaymentFrisbee extends Controller
 			'entry_status',
 			'entry_order_status_cancelled',
 			'entry_sort_order',
+			'entry_title',
 			'error_permission',
 			'error_merchant',
 			'error_secretkey',
@@ -135,7 +136,8 @@ class ControllerExtensionPaymentFrisbee extends Controller
 			'frisbee_order_process_status_id',
 			'frisbee_order_cancelled_status_id',
 			'frisbee_currency',
-			'frisbee_styles'
+			'frisbee_styles',
+			'frisbee_title'
 		];
 
 		foreach ($arr as $value) {
@@ -198,6 +200,7 @@ class ControllerExtensionPaymentFrisbee extends Controller
 			'entry_status',
 			'entry_order_status_cancelled',
 			'entry_sort_order',
+			'entry_title',
 			'error_permission',
 			'error_merchant',
 			'error_secretkey',
@@ -257,7 +260,8 @@ class ControllerExtensionPaymentFrisbee extends Controller
 			'frisbee_order_process_status_id',
 			'frisbee_currency',
 			'frisbee_payment_type',
-			'frisbee_styles'
+			'frisbee_styles',
+			'frisbee_title'
 		];
 
 		foreach ($arr as $value) {
@@ -305,7 +309,7 @@ class ControllerExtensionPaymentFrisbee extends Controller
 			'entry_merchant', 'entry_styles', 'entry_secretkey', 'entry_order_status','entry_currency', 'entry_backref',
 			'entry_server_back', 'entry_payment_type', 'entry_common_type', 'entry_preauth_type', 'entry_language',
 			'entry_status', 'entry_order_status_cancelled', 'entry_sort_order', 'error_permission', 'error_merchant',
-			'error_secretkey', 'text_edit', 'entry_help_lang'
+			'error_secretkey', 'text_edit', 'entry_help_lang', 'entry_title'
 		);
 
 		foreach ($arr as $value) {
@@ -362,7 +366,8 @@ class ControllerExtensionPaymentFrisbee extends Controller
 			'payment_frisbee_order_status_id',
 			'payment_frisbee_order_process_status_id',
 			'payment_frisbee_currency',
-			'payment_frisbee_type'
+			'payment_frisbee_type',
+			'payment_frisbee_title'
 		);
 
 		foreach ($array_data as $value) {

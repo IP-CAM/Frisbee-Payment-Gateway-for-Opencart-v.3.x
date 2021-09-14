@@ -181,7 +181,7 @@ class FrisbeeService
             return $this->requestResult->response->error_message;
         }
 
-        return 'Frisbee response error';
+        return 'Frisbee response error. Contact Frisbee support.';
     }
 
     /**
@@ -194,7 +194,7 @@ class FrisbeeService
         if (strpos($_SERVER['CONTENT_TYPE'], 'application/json') !== false) {
             return json_decode($content, true);
         } elseif (strpos($_SERVER['CONTENT_TYPE'], 'application/xml') !== false) {
-            return (array) simplexml_load_string($content, "SimpleXMLElement", LIBXML_NOCDATA);
+            return (array) simplexml_load_string($content, 'SimpleXMLElement', LIBXML_NOCDATA);
         }
 
         return $_REQUEST;
@@ -425,9 +425,14 @@ class FrisbeeService
                 'content' => json_encode(['request' => $frisbeeParameters])
             ]
         ];
-        $context = stream_context_create($opts);
-        $content = file_get_contents($this->getRequestUrl(), false, $context);
-        $this->requestResult = $this->decodeJson($content);
+
+        try {
+            $context = stream_context_create($opts);
+            $content = file_get_contents($this->getRequestUrl(), false, $context);
+            $this->requestResult = $this->decodeJson($content);
+        } catch (\Exception $exception) {
+            return false;
+        }
 
         if (!isset($this->requestResult->response->response_status) || $this->requestResult->response->response_status != 'success') {
             return false;

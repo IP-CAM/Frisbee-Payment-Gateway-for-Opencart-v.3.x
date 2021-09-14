@@ -30,6 +30,7 @@ $_['entry_frisbee_result'] = 'Страница успешного ответа';
 $_['entry_status'] = 'Статус:';
 $_['entry_sort_order'] = 'Порядок сортировки:';
 $_['entry_styles'] = 'Стили';
+$_['entry_title'] = 'Название способа оплаты:';
 // Error
 $_['error_permission'] = 'У Вас нет прав для управления этим модулем!';
 $_['error_merchant'] = 'Неверный ID магазина (Merchant ID)!';

@@ -118,6 +118,13 @@
                             </select>
                         </div>
                     </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label"><?php echo $entry_title; ?></label>
+                        <div class="col-sm-10">
+                            <input type="text" name="frisbee_title" value="<?php echo $frisbee_title; ?>" class="form-control" />
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>

@@ -26,6 +26,7 @@ $_['entry_status'] = 'Status:';
 $_['entry_sort_order'] = 'Ordering:';
 $_['entry_styles'] = 'Fondy Styles';
 $_['entry_frisbee_result'] = 'Result URL';
+$_['entry_title'] = 'Payment Method Title:';
 // Error
 $_['error_permission'] = "You haven't permission !";
 $_['error_merchant'] = 'Merchant ID are incorrect!';
