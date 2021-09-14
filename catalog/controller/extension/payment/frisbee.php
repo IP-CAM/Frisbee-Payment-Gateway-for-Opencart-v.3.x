@@ -52,6 +52,9 @@ class ControllerExtensionPaymentFrisbee extends Controller
             );
         }
 
+        $orderStatusPending = $this->config->get('frisbee_order_process_status_id') ?: $this->config->get('payment_frisbee_order_process_status_id');
+        $this->modelCheckoutOrderUpdate($order_id, $orderStatusPending, 'Processing');
+
         $data['frisbee'] = $out;
         $data['styles'] = $this->config->get('frisbee_styles');
         $data['button_confirm'] = $this->language->get('button_confirm');

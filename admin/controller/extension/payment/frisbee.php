@@ -374,12 +374,12 @@ class ControllerExtensionPaymentFrisbee extends Controller
 			$data[$value] = (isset($this->request->post[$value])) ? $this->request->post[$value] : $this->config->get($value);
 		}
 
-		if (empty($data['frisbee_order_status_id'])) {
-			$data['frisbee_order_status_id'] = 15;
+		if (empty($data['payment_frisbee_order_status_id'])) {
+			$data['payment_frisbee_order_status_id'] = 15;
 		}
 
-		if (empty($data['frisbee_order_process_status_id'])) {
-			$data['frisbee_order_process_status_id'] = 2;
+		if (empty($data['payment_frisbee_order_process_status_id'])) {
+			$data['payment_frisbee_order_process_status_id'] = 2;
 		}
 
 		$data['header'] = $this->load->controller('common/header');
