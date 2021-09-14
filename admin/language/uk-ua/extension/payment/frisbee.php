@@ -1,9 +1,9 @@
 <?php
-$_['heading_title'] = 'Фрізбі';
+$_['heading_title'] = 'Оплата частинами з Frisbee';
 $_['text_edit'] = 'Редагувати модуль';
 
 $_['text_payment'] = 'Платіж';
-$_['text_frisbee'] = '<a onclick="window.open(\'https://frisbee.ua/\');"> <img src = "view/image/payment/frisbee.png" alt = "Фрізбі" title = "Фрізбі" style = "border: 1px solid #EEEEEE;" /> </a> ';
+$_['text_frisbee'] = '<a onclick="window.open(\'https://frisbee.ua/\');"> <img src = "view/image/payment/frisbee.svg" alt = "Фрізбі" title = "Фрізбі" style = "border: 1px solid #EEEEEE;" /> </a> ';
 $_['text_success'] = 'Налаштування оновлено';
 $_['text_pay'] = 'Фрізбі';
 $_['text_response_description'] = 'Текст помилки:';

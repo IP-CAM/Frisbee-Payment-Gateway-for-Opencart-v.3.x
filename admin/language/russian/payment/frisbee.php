@@ -1,12 +1,12 @@
 <?php
 // Heading
-$_['heading_title'] = 'Frisbee';
+$_['heading_title'] = 'Оплата частями с Frisbee';
 
 // Text
 $_['text_edit'] = 'Редакторование модуля';
 
 $_['text_payment'] = 'Оплата';
-$_['text_frisbee'] = '<a onclick="window.open(\'https://frisbee.ua\');"><img src="view/image/payment/frisbee.png" alt="Frisbee" title="Frisbee" style="border: 1px solid #EEEEEE;" /></a>';
+$_['text_frisbee'] = '<a onclick="window.open(\'https://frisbee.ua\');"><img src="view/image/payment/frisbee.svg" alt="Frisbee" title="Frisbee" style="border: 1px solid #EEEEEE;" /></a>';
 $_['text_success'] = 'Настройки модуля обновлены!';
 $_['text_pay'] = 'Frisbee';
 $_['text_card'] = 'Visa/MasterCard';
