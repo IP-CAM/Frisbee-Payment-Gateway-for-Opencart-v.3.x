@@ -1,4 +1,4 @@
-# Frisbee payment gateway for Opencart 3
+# Frisbee payment gateway for OpenCart 3
 
 ## System requirements
 

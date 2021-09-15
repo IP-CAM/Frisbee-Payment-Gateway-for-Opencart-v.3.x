@@ -13,12 +13,12 @@ $_['text_response_code'] = 'Код помилки:';
 $_['entry_merchant'] = 'Ідентифікатор продавця:';
 $_['entry_secretkey'] = 'Секретний ключ:';
 
-$_['entry_order_status'] = 'Статус замовлення після оплати:';
-$_['entry_order_process_status'] = 'Статус замовлення виконується:';
+$_['entry_order_status'] = 'Статус замовлення після успішної оплати:';
+$_['entry_order_process_status'] = 'Статус замовлення що виконується:';
 $_['entry_currency'] = 'Валюта:';
 $_['entry_language'] = 'Мова:';
 $_['entry_help_lang'] = 'За замовчуванням:';
-$_['entry_order_status_cancelled'] = 'Статус замовлення скасовано:';
+$_['entry_order_status_cancelled'] = 'Статус скасованого замовлення:';
 
 $_['entry_status'] = 'Стан:';
 $_['entry_sort_order'] = 'Замовлення:';
