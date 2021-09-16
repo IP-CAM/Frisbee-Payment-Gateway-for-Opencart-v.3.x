@@ -10,9 +10,6 @@ class FrisbeeService
     const ORDER_SEPARATOR = ':';
     const SIGNATURE_SEPARATOR = '|';
     const URL = 'https://api.fondy.eu/api/checkout/url/';
-    const DEV_URL = 'https://dev2.pay.fondy.eu/api/checkout/url/';
-    const DEV_MERCHANT = '1601318';
-    const DEV_SECRET_KEY = 'test';
     const SESSION_NAME_CHECKOUT_HASH = 'frisbee_checkout_hash';
     const SESSION_NAME_CHECKOUT_URL = 'frisbee_checkout_url';
 
@@ -39,13 +36,7 @@ class FrisbeeService
      */
     public function setMerchantId($merchantId)
     {
-        $merchantId = trim($merchantId);
-
-        if (empty($merchantId) || $merchantId === self::DEV_MERCHANT) {
-            $this->merchantId = self::DEV_MERCHANT;
-        } else {
-            $this->merchantId = $merchantId;
-        }
+        $this->merchantId = trim($merchantId);
 
         $this->requestParameters['merchant_id'] = $this->merchantId;
     }
@@ -56,11 +47,7 @@ class FrisbeeService
      */
     public function setSecretKey($secretKey)
     {
-        if (empty($secretKey)) {
-            $this->secretKey = self::DEV_SECRET_KEY;
-        } else {
-            $this->secretKey = $secretKey;
-        }
+        $this->secretKey = $secretKey;
     }
 
     /**
@@ -149,10 +136,6 @@ class FrisbeeService
      */
     public function getRequestUrl()
     {
-        if ($this->merchantId === self::DEV_MERCHANT) {
-            return self::DEV_URL;
-        }
-
         return self::URL;
     }
 
@@ -206,7 +189,7 @@ class FrisbeeService
      */
     public function getAmount($value)
     {
-        return round(floatval($value) * 100);
+        return round((float) $value * 100);
     }
 
     /**
@@ -403,7 +386,7 @@ class FrisbeeService
         $data = json_decode($data);
 
         if (json_last_error() !== JSON_ERROR_NONE) {
-            throw new \Exception('Unable to parse string into JSON');
+            throw new \Exception('Unable to decode JSON');
         }
 
         return $data;
